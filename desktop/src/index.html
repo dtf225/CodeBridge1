@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>验证码同步</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <div id="titlebar">
+    <span class="title-text">🔐 验证码同步</span>
+    <div class="titlebar-actions">
+      <button id="btn-min" title="最小化">─</button>
+      <button id="btn-close" title="隐藏">✕</button>
+    </div>
+  </div>
+
+  <div id="pairing-section" class="section">
+    <div class="section-header">📱 扫码配对</div>
+    <div id="qr-container">
+      <img id="qr-image" src="" alt="配对二维码" />
+      <p class="hint">使用手机端 App 扫描二维码完成配对</p>
+    </div>
+    <button id="btn-refresh-qr" class="btn-secondary">🔄 重新生成</button>
+  </div>
+
+  <div id="codes-section" class="section">
+    <div class="section-header">📋 验证码列表</div>
+    <div id="codes-list">
+      <div class="empty-state">等待手机端连接...</div>
+    </div>
+  </div>
+
+  <div id="totp-section" class="section">
+    <div class="section-header">⏱️ 动态验证码 (TOTP)</div>
+    <div id="totp-list">
+      <div class="empty-state">暂无 TOTP 验证码</div>
+    </div>
+  </div>
+
+  <div id="status-bar">
+    <span id="connection-status" class="status-disconnected">● 未连接</span>
+  </div>
+</div>
+
+<script src="totp.js"></script>
+<script src="renderer.js"></script>
+</body>
+</html>

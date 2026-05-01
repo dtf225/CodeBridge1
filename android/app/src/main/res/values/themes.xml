@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CodeSync" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#7C8AFF</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#E0E4FF</item>
+        <item name="colorSecondary">#5CDB8B</item>
+        <item name="colorSurface">#1E1E28</item>
+        <item name="colorOnSurface">#E0E0E0</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

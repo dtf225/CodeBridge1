@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">验证码同步</string>
+    <string name="scan_qr">扫描配对二维码</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">未连接</string>
+    <string name="service_running">同步服务运行中</string>
+    <string name="permission_sms_required">需要短信读取权限才能自动提取验证码</string>
+    <string name="permission_notification_required">需要通知权限</string>
+    <string name="add_totp">添加 TOTP</string>
+    <string name="totp_secret_hint">输入 Base32 密钥</string>
+    <string name="totp_label_hint">标签（如 Google、GitHub）</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="disconnect">断开连接</string>
+    <string name="connect">连接电脑</string>
+</resources>
